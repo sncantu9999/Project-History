@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    {% if error %}
+    <p class="error"><strong>Error:</strong> {{error}}</p>
+    {% endif %}
+    {% if input %}
+    <style type="text/css">
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <br />
+    <br />Average Flight Ratings
+    <table>
+        <th>Flight Number</th>
+        <th>Average</th>
+
+        {% for line in input %}
+        <tr>
+            <td>{{line['flight_number']}}</td>
+            <td>{{line['Average']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    {% if input2 %}
+    <style type="text/css">
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <br />
+    <br />Customer Reviews and Comments
+    <table>
+        <th>Flight Number</th>
+        <th>Ticket ID</th>
+        <th>Customer Email</th>
+        <th>Customer Comment</th>
+        <th>Customer Rating</th>
+
+        {% for line in input2 %}
+        <tr>
+            <td>{{line['flight_number']}}</td>
+            <td>{{line['ticket_id']}}</td>
+            <td>{{line['cust_email']}}</td>
+            <td>{{line['cust_comment']}}</td>
+            <td>{{line['cust_rating']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <br />
+    <a href="/homeforStaff">Go back</a>
+</body>
+
+
+</html>
