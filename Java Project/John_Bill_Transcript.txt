@@ -1,0 +1,27 @@
+John Bill
+
+Year		Class		Grade
+Freshman	Speech	B
+Freshman	Chemistry I	A
+Freshman	English I	A
+Freshman	World Geography	B
+Freshman	Algebra I	B
+
+Sophomore	Chemistry II	A
+Sophomore	PE	A
+Sophomore	Health Education	A
+Sophomore	French I	B
+Sophomore	Algebra II	C
+Sophomore	English II	A
+
+Junior	Physical Science	A
+Junior	Pre-Calculus	C
+Junior	French II	C
+Junior	English III	A
+Junior	Writing	B
+
+Senior	English IV	B
+Senior	Social Studies	B
+Senior	Business	A
+Senior	Debate	B
+Senior	Calculus	D
